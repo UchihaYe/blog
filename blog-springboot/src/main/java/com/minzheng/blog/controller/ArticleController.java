@@ -55,6 +55,7 @@ public class ArticleController {
     @ApiOperation(value = "查看首页文章")
     @GetMapping("/articles")
     public Result<List<ArticleHomeDTO>> listArticles() {
+
         return Result.ok(articleService.listArticles());
     }
 
